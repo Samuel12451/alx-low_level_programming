@@ -38,5 +38,6 @@ int main(void)
 		}
 		a++;
 	}
+	putchar(10);
 	return (0);
 }
