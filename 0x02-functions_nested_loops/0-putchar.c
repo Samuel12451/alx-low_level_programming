@@ -15,10 +15,10 @@ int main(void)
 
 	while (i<100)
 	{
-		putchar(ch[i]);
+		_putchar(ch[i]);
 		i++;
 	}
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
