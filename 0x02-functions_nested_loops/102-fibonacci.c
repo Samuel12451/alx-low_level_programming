@@ -21,7 +21,7 @@ int main(void)
 	{
 		sum = a + b;
 		printf("%li, ", sum);
-		first = b;
+		a = b;
 		b = sum;
 
 		count++;
