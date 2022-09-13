@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-	char ch[100] = "_putchar";
+	char ch[9] = "_putchar";
 	int i = 0;
 
 	while (i<100)
