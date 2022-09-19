@@ -2,18 +2,17 @@
 
 /**
  * _puts - prints string
- * @st: string
+ * @str: string
  * Return: void
  */
 
-void _puts(char *st)
+void _puts(char *str)
 {
 	int i = 0;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	while (st[i] != '\0')
+	while (str[i] != '\0')
 	{
-		_putchar(st[i]);
+		_putchar(str[i]);
 		i++;
 	}
 
