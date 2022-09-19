@@ -10,5 +10,12 @@
 
 int _atoi(char *s)
 {
-	return (0);
+	int i;
+
+	s = "122";
+	i = atoi(s);
+
+	printf("i = %d\n", i);
+
+	return 0;
 }
