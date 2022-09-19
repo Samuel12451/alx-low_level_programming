@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 /**
- * atoi - convert a string to integer
+ * _atoi - convert a string to integer
  * @s: input
  * Return: 0
  */
 
 
-int main(void)
+int _atoi(char *s)
 {
 	int i;
 	char *s;
