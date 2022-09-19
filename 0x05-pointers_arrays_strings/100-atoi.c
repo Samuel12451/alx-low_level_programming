@@ -11,7 +11,6 @@
 int _atoi(char *s)
 {
 	int i;
-	char *s;
 
 	s = "122";
 	i = atoi(s);
