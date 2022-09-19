@@ -12,7 +12,7 @@ int _atoi(char *s)
 {
 	int i;
 
-	s = "122";
+	s = "4";
 	i = atoi(s);
 
 	printf("i = %d\n", i);
