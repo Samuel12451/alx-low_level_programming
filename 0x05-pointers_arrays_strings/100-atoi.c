@@ -12,11 +12,12 @@ int _atoi(char *s)
 {
 	int i;
 
-	
-	s = atoi("4");
+	s = "4"
+	i = atoi(s);
 
 	printf("%d\n", i);
-
+	
+	
 
 	return 0;
 }
