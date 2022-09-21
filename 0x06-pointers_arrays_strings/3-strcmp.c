@@ -6,7 +6,8 @@
  * @s2: second pointer
  * Return: string
  */
-int _strcmp(char *s1, char *s2);
+
+int _strcmp(char *s1, char *s2)
 {
 	int counter, varcom;
 
