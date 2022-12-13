@@ -1,35 +1,32 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
- * _atoi - convert a string to integer
- * @s: input
- * Return: 0
+ * _atoi - convert string to integer
+ * @s: string to be coverted
+ * Description: a function that convert a string to an integer.
+ *
+ * Return: integer else 0 if no number in the string
  */
-
-
 int _atoi(char *s)
 {
-	int i;
+	int i = 0, sign = 1;
+	unsigned int num = 0;
 
-	s = "4";
-	s1 = "10";
-	s2 = "-3";
-	s3 = "99";
-	s4 = "-40";
-	s5 = " ------++++++-----+++++--98";
-	s6 = "Hello ----- world\n";
-	s7 = "+++++ +-+ 2242454";
-	s8 = "2147483647";
-	s9 = " + + - -98 Battery Street; San Francisco, CA 94111 - USA ";
-	s10 = "---++++ -++ Sui - te - 402 #cisfun :)";
-	s11 = "";
-	s12 = "-2147483648";
-	i = atoi(s,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12);
-
-	printf("%d\n", i);
-	
-	
-
-	return 0;
+	while (s[i] != '\n')
+	{
+		if ((s[i] < '0' || s[i] > '9') && (s[i] == '-'))
+		{
+			sign = sign * -1;
+		}
+		else if (s[i] >= '0' && s[i] <= '9')
+		{
+			num = num * 10 + (s[i] - '0');
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+			{
+				break;
+			}
+		}
+		i++;
+	}
+	return (num * sign);
 }
